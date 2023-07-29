@@ -1,0 +1,488 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(6, 25, 45);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(33, 11, 128);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: crimson;
+    font-size: 1.03rem;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 1.2px;
+    margin: 60px 84px;
+
+
+}
+
+section {
+    padding: 100px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 15px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.left {
+    font-size: 1.5rem;
+
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 95px 0;
+    align-items: center;
+}
+
+.firstSection>div {
+    width: 38%;
+}
+
+
+
+.leftSection {
+    font-size: 2.1rem;
+
+
+
+}
+
+.leftSection button {
+    padding: 50% 0;
+
+}
+
+.leftSection .btn {
+    padding: 10px;
+    background: rgb(36, 36, 114);
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+
+
+}
+
+.rightSection img {
+    width: 70%;
+
+}
+
+.purple {
+    color: rgb(141, 10, 36);
+}
+
+#element {
+    color: rgb(141, 10, 36);
+
+}
+
+/* about section styling */
+.about .title::before {
+    background: #fff;
+}
+
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: crimson;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background: none;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 1.2px;
+    margin: 60px 84px;
+
+
+}
+
+/* skills section styling */
+.skills .title::before {
+    background: #fff;
+}
+
+
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: crimson;
+    background: none;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skills-content .right .html::before {
+    width: 90%;
+}
+
+.skills-content .right .css::before {
+    width: 70%;
+}
+
+.skills-content .right .js::before {
+    width: 50%;
+}
+
+.skills-content .right .c::before {
+    width: 80%;
+}
+
+.skills-content .right .mysql::before {
+    width: 90%;
+}
+
+.skills-content .right .python::before {
+    width: 90%;
+}
+
+.skills-content .right .ml::before {
+    width: 70%;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 1.2px;
+    margin: 60px 84px;
+
+
+}
+
+/* services section styling */
+.services,
+.container {
+    color: #fff;
+    background: rgb(6, 25, 45);
+}
+
+.services .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+    margin-top: 1rem;
+    background: #111;
+}
+
+.services .serv-content .card {
+    width: calc(30% - 20px);
+    background: rgb(51, 51, 230);
+    text-align: center;
+    border-radius: 6px;
+    padding: 40px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: rgb(141, 10, 36);
+}
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i {
+    font-size: 50px;
+    color: rgb(20, 83, 220);
+    transition: color 0.3s ease;
+}
+
+.services .serv-content .card:hover i {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+main hr {
+    border: 0;
+    background: blueviolet;
+    height: 1.2px;
+    margin: 60px 84px;
+
+
+}
+
+.container {
+    color: #fff;
+    background: rgb(6, 25, 45);
+}
+
+.container .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.container .title::after,
+.teams .title::after {
+    margin-top: 1rem;
+    background: #111;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: rgb(20, 83, 220);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: rgb(6, 25, 45);
+    padding: 20px;
+}
+
+
+
+footer {
+    background-color: rgb(33, 11, 128);
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+
+}
+
+footer .footer-right {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
